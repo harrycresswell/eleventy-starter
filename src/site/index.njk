@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+welcome: "Welcome to my new Eleventy Blog!"
+---
+
+<h1>{{ welcome }}</h1>
+
+ <ul>
+    {% for post in collections.posts | reverse %}
+      <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
