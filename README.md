@@ -11,11 +11,17 @@ A simple starter for [Eleventy](11ty.io) static site generator by [Harry Cresswe
 
 ## Prerequisites
 
-You will need the latest versions of  [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) installed on your machine.
+You will need the latest versions of [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) installed on your machine.
 
 ## Installation
 
-Clone this repository and install the required dependencies:
+Clone this repository:
+
+```
+git clone https://github.com/harrycresswell/eleventy-starter.git
+```
+
+Then install the required dependencies:
 
 ```
 npm install
@@ -43,13 +49,12 @@ This will clean the `._site` directory and rebuild it ready for deployment.
 
 ## Basic concepts
 
-Write your `scss` in `.src/scss`. 
+Write your `scss` in `.src/scss`.
 
-With a local server running `onchange` will watch for any changes you make to your `scss` files and compile them to `.src/site/_includes/css/main.css`. Eleventy handles live reloading, so no need for browser sync. 
+With a local development server running, [onchange](https://www.npmjs.com/package/onchange) will watch for any changes you make to your `scss` files and compile them to `.src/site/_includes/css/main.css`.
+
+Eleventy handles live reloading, so no need for anything like browsersync.
 
 Create new partials and templates in `.src/site/_includes`.
 
-
-
-
-
+Create new posts in `.src/site/posts`.

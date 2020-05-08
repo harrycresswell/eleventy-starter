@@ -1,19 +1,20 @@
 {
-  "name": "11ty-starter",
+  "name": "eleventy-starter",
   "version": "1.0.0",
-  "description": "A starter project for 11ty powered websites with SCSS support.",
+  "description": "A barebones starter project for Eleventy projects with SCSS support.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compressed -o src/site/_includes/css src/scss",
-    "serve": "eleventy --serve",
     "watch:css": "onchange 'src/scss' -- npm run scss",
+    "serve": "eleventy --serve",
     "start": "run-p serve watch:css",
     "clean": "rm -rf _site/*",
     "build": "npm run clean && eleventy"
-
   },
-  "keywords": ["eleventy", "Sass"],
+  "keywords": [
+    "eleventy",
+    "Sass"
+  ],
   "author": "Harry Cresswell",
   "license": "ISC",
   "devDependencies": {
