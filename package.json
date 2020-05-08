@@ -1,7 +1,7 @@
 {
   "name": "eleventy-starter",
   "version": "1.0.0",
-  "description": "A barebones starter project for Eleventy projects with SCSS support.",
+  "description": "A barebones starter project for Eleventy powered websites with SCSS support.",
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --output-style compressed -o src/site/_includes/css src/scss",
